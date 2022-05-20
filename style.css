@@ -17,14 +17,12 @@
   }
   
   .center {
-    width: 180px;
-    height: 60px;
+    width: 100%;
     position: absolute;
   }
   
   .btn {
-    width: 180px;
-  height: 60px;
+    width: 100%;
     cursor: pointer;
     background: transparent;
     border: 1px solid #4F95DA;
@@ -39,7 +37,7 @@
     top: 0;
     fill: none;
     stroke: rgb(255, 255, 255);
-    stroke-dasharray: 150 480;
+    stroke-dasharray: 180 480;
     stroke-dashoffset: 150;
     transition: 1s ease-in-out;
   }
@@ -47,16 +45,11 @@
   .btn:hover {
     transition: 1s ease-in-out;
     background: #58a9fa;
-    color: rgb(255, 255, 255);
   }
-  
-  .btn:hover svg {
-    stroke-dashoffset: -480;
-  }
-  
-  .btn span {
-    color: rgb(255, 255, 255);
-    font-size: 20px;
+
+  .buchenschrift{
+    font-size: xx-large;
+    color: white;
   }
 
 p1{
