@@ -1,57 +1,158 @@
-.popup{
-    cursor: pointer;
+.popup {
+  cursor: pointer;
 }
 
 @import url('https://fonts.googleapis.com/css?family=Lato:100&display=swap');
 
 .container {
-    width: 400px;
-    height: 400px;
-    position: fixed;
-    left: 50%;
-    top: 90%;
-    transform: translate(-50%, -50%);
-    display: flex;
-    justify-content: center;
-    align-items: center;
+  width: 400px;
+  height: 400px;
+  position: fixed;
+  left: 50%;
+  top: 90%;
+  transform: translate(-50%, -50%);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.center {
+  width: 100%;
+  position: absolute;
+}
+
+.btn {
+  width: 100%;
+  cursor: pointer;
+  background: transparent;
+  border: 1px solid #4F95DA;
+  outline: none;
+  transition: 1s ease-in-out;
+  background: #4F95DA;
+  border-radius: 5px;
+}
+
+.btn:hover {
+  transition: 1s ease-in-out;
+  background: #58a9fa;
+  border-radius: 10px;
+}
+
+.buchenschrift {
+  font-size: xx-large;
+  color: white;
+}
+
+p1 {
+  color: white;
+}
+
+.table {
+  border-collapse: collapse;
+  font-size: 0.9em;
+  height: "50";
+  border-radius: 5px 5px 5px 5px;
+  overflow: hidden;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.15);
+}
+
+.table thead tr {
+  background-color: #009879;
+  color: white;
+  font-weight: bold;
+}
+
+.table th,
+.table td {
+  padding: 12px 15px;
+}
+
+.table tbody {
+  border-bottom: 1px solid #dddd;
+}
+
+@media only screen and (max-width:1080px) {
+
+  /* For mobile phones: */
+  .table {
+    float: none;
+    width: auto;
   }
-  
-  .center {
-    width: 100%;
-    position: absolute;
-  }
-  
-  .btn {
-    width: 100%;
-    cursor: pointer;
-    background: transparent;
-    border: 1px solid #4F95DA;
-    outline: none;
-    transition: 1s ease-in-out;
-    background: #4F95DA;
-  }
-  
-  svg {
-    position: absolute;
-    left: 0;
-    top: 0;
-    fill: none;
-    stroke: rgb(255, 255, 255);
-    stroke-dasharray: 180 480;
-    stroke-dashoffset: 150;
-    transition: 1s ease-in-out;
-  }
-  
-  .btn:hover {
-    transition: 1s ease-in-out;
-    background: #58a9fa;
+}
+
+@media only screen and (min-width:1100px) {
+
+  /* For desktop phones: */
+  .table {
+    float: left;
+    width: 49%;
   }
 
-  .buchenschrift{
-    font-size: xx-large;
-    color: white;
+  #tableleft {
+    margin-right: 2%;
+  }
+}
+
+a {
+  color: white;
+}
+
+h1 {
+  font-family: 'Roboto', sans-serif;
+  text-align: center;
+}
+
+.stattfinden {
+  color: rgb(255, 255, 255);
+  background-color: rgb(0, 177, 0);
+  transition: all 1s;
+  padding: 10px;
+}
+
+.stattfinden:hover {
+  background-color: rgb(0, 225, 0);
+  border-radius: 5px;
+}
+
+img {
+  height: 100%;
+}
+
+/* Variante A */
+.basis-card {
+  display: none;
+  width: 100%;
+  margin-bottom: 20px;
+}
+
+.basis-header {
+  background-color: rebeccapurple;
+  color: white;
+  border-radius: 5px 5px 0 0;
+  padding: 10px;
+  font-weight: bold;
+}
+
+.basis-card div {
+  padding: 10px;
+  border-bottom: 1px solid #ccc;
+}
+
+.basis-card div:last-of-type {
+  border-bottom: 2px solid rebeccapurple;
+}
+
+.basis-card div > span {
+  color: rebeccapurple;
+  font-weight: bold;
+}
+
+@media screen and (max-width: 578px) {
+  table.table {
+    display: none;
   }
 
-p1{
-    color: white;
+  .basis-card {
+    display: block;
+  }
 }
