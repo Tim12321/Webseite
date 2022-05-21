@@ -147,7 +147,8 @@ img {
   font-weight: bold;
 }
 
-@media screen and (max-width: 578px) {
+@media all and (max-width: 600px) {
+  
   table.table {
     display: none;
   }
