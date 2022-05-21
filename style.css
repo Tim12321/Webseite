@@ -142,7 +142,8 @@ img {
   border-bottom: 2px solid rebeccapurple;
 }
 
-.basis-card div > span {
+
+span{
   color: rebeccapurple;
   font-weight: bold;
 }
@@ -156,4 +157,17 @@ img {
   .basis-card {
     display: block;
   }
+  .popup{
+    color: black;
+  }
+  p{
+    color: white;
+  }
+  .stattfindenm{
+    color: rgb(0, 255, 0);
+  }
+}
+
+#textsamstag{
+  text-align: left;
 }
