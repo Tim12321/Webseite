@@ -44,3 +44,18 @@
     text-decoration: none;
     cursor: pointer;
 }
+
+.bookcours{
+    border-radius: 10px;
+    border: 0;
+    color: white;
+    background-color: rebeccapurple;
+    height: 40px;
+    width: 100%;
+    margin-top: 10px;
+    transition: 0.5s ease-in-out;
+}
+
+.bookcours:hover{
+    background-color: rgb(152, 0, 152);
+}
